@@ -1,0 +1,16 @@
+<div class ="content">
+  <h3><b>{{tableData.title}}</b><p>{{VisitedWords()}}</p></h3>
+  <div class="myOverlay" *ngIf="showOverlay && !inputHasFocus" (click)="hideOverlay()">
+    <div class="overlay-message">Click here to start typing</div>
+  </div>
+  <label for="myInputField">
+    <span *ngFor="let word of wordArray; let i = index" [name]="word.text" [class]="word.state.toString()">
+      <span *ngFor="let letter of word.letters" class="letter" [class]="letter.state.toString()">{{letter.character}}</span>
+      <span *ngIf="i != wordArray.length - 1" class="space">&nbsp;</span></span>
+  </label>
+  <br>
+  <input (keydown)="validateLetter($event.key)" (blur)="onElementBlur()" (focus)="onElementFocus()" #myInputField id="myInputField" matInput [formControl]="formControl" autocomplete="off">
+  <button class="reloadButton" (click)="Reload()"><mat-icon>{{ reloadIcon }}</mat-icon></button>
+  <div class="timer">{{ remainingTime }} seconds</div>
+  <div class="wpm">WPM: {{ calculatedWPM }}</div>
+</div>

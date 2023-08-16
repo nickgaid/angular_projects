@@ -1,0 +1,8 @@
+<form class="example-form">
+  <div class="input-area">
+    <mat-form-field appearance="outline" class="example-full-width">
+      <input matInput placeholder={{targetWord.word}} value="" (keydown)="validateWord($event.key,$event.target.value, $event)" [formControl]="formControl">
+    </mat-form-field>
+    <button class="reloadButton" (click)="resetWords()"><mat-icon>{{ reloadIcon }}</mat-icon></button>
+  </div>
+</form>

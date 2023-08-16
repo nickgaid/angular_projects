@@ -1,0 +1,80 @@
+.content{
+  background-color:rgb(35, 33, 36) !important;
+  color: white;
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 300px 100px;
+}
+.content label{
+  font-family:"Century Gothic", sans-serif;
+  font-size: medium;
+  display: flex;
+  justify-content: center;
+  flex-wrap:wrap;
+}
+.content h3{
+  font-family: "Century Gothic", sans-serif;
+}
+.word{
+  color: rgb(83, 83, 83);
+  display: flex;
+  width: min-content;
+  animation-name: caretFlashSmooth;
+  animation: pulseAttention 1.5s cubic-bezier(.215, .61, .355, 1) forwards infinite;
+}
+.falseWord .letter
+{
+  text-decoration: underline;
+  text-decoration-color: crimson;
+}
+.highlighted{
+  color: yellow;
+  font-weight: bold;
+  animation: pulseAttention 1.5s cubic-bezier(.215, .61, .355, 1) forwards infinite;
+}
+.correct{
+  color:white;
+  animation: pulseAttention 1.5s cubic-bezier(.215, .61, .355, 1) forwards infinite;
+}
+.false{
+  color: crimson;
+}
+.none{
+  color: rgb(109, 106, 106);
+  animation: pulseAttention 1.5s cubic-bezier(.215, .61, .355, 1) forwards infinite;
+}
+#myInputField{
+  margin-left: -170px;
+  opacity: 0;
+}
+.reloadButton{
+  background-color: rgb(35, 33, 36);
+  border:none;
+}
+.reloadButton mat-icon{
+  vertical-align: middle;
+  color: white;
+}
+.myOverlay {
+  position: fixed;
+  top: 70px;
+  right: 25px;
+  /* right: 1;
+  width: 100%;
+  height: 90%; */
+  background-color: rgba(0, 0, 0, 0.6); /* Adjust the opacity as needed */
+  backdrop-filter: blur(5px); /* Adjust the blur radius as needed */
+  z-index: 9999;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding: 370px 350px;
+}
+
+.overlay-message {
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  padding: 20px;
+  cursor: pointer;
+}

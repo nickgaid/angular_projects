@@ -1,0 +1,27 @@
+.example-form {
+  min-width: 150px;
+  max-width: 100%;
+  width: 100%;
+}
+.example-full-width {
+  width: 95%;
+}
+.example-full-width input{
+  font-size: medium;
+}
+.reloadButton{
+  width: 4%;
+  background-color:lightskyblue;
+  border-radius: 3px;
+  padding-top: 3px;
+}
+.reloadButton mat-icon{
+  vertical-align: middle;
+}
+.input-area{
+  display: flex;
+  justify-content: space-between;
+}
+:host ::ng-deep .mat-mdc-form-field-subscript-wrapper{
+  display: none!important;
+}

@@ -1,0 +1,29 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Compiled output
+/dist/
+/tmp/
+/out-tsc/
+
+# Editor-specific files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Logs and databases
+*.log
+*.sqlite
+
+# Environment variables
+.env
+
+# Miscellaneous
+.DS_Store
+Thumbs.db

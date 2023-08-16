@@ -1,0 +1,9 @@
+<div class ="content">
+  <h3><b>{{tableData.title}}</b></h3>
+  <p>
+    <ng-container *ngFor="let wordElement of wordArray ; let i = index">
+      <span [class]="wordElement.state.toString()">{{wordElement.word}}</span>
+      <ng-container *ngIf="i != wordArray.length - 1">&nbsp;</ng-container>
+    </ng-container>
+  </p>
+</div>

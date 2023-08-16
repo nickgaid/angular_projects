@@ -1,0 +1,15 @@
+<app-Header
+  class="light-bg deep-box-shadow"
+  (toggleMainSidebar)="sideBarToggler()"></app-Header>
+<mat-drawer-container>
+
+  <mat-drawer mode="side" [opened]="sideBarOpen">
+    <app-SideBar></app-SideBar>
+  </mat-drawer>
+
+  <mat-drawer-content>
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-drawer-content>
+</mat-drawer-container>

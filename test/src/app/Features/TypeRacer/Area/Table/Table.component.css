@@ -1,0 +1,29 @@
+.content{
+  background-color:cornsilk;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.content p{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: medium;
+  word-wrap: break-word;
+}
+
+.highlighted{
+  background-color: yellow;
+  font-weight: bold;
+}
+
+.correct{
+  background-color:chartreuse;
+}
+
+.false{
+  background-color: crimson;
+}
+
+.none{
+  background-color: cornsilk;
+}
